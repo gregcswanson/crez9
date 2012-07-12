@@ -1,0 +1,14 @@
+<div class="container">
+    <h2>Delete Category</h2>
+    <h4>{{=title}}</h4>
+</div>
+<div id="container">
+    <form method="post">
+        <input type="hidden" name="id" value="{{=item.RowKey}}" />
+        <div>
+            <span>Delete '{{=item.description}}'?</span>
+        </div>
+        <input name="submit" type="submit" value="Submit" />
+        <a href="/">Cancel</a>
+    </form>
+</div>

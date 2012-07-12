@@ -1,0 +1,27 @@
+<div class="margin-top-small">
+    <div class="row">
+        <dl class="tabs">
+            <dd class="active"><a href="/category">categories</a></dd>
+        </dl>
+    </div>
+</div>
+<div class="row">
+    <a class="small button" href="/category/add">Add</a>
+</div>
+<div class="">
+    {{ for (var i in items) { }}
+    <div class="row">
+        <hr />
+        <div class="eight columns">
+            {{= items[i].description }}
+        </div>
+        <div class="four columns">
+            <div class="right">
+                <a class="small secondary button" href="/category/edit/{{= items[i].RowKey}}">Edit</a>
+                <a class="small alert button" href="/category/delete/{{= items[i].RowKey}}">Delete</a>
+            </div>
+        </div>
+    </div>
+    {{ } }}
+</div>
+
