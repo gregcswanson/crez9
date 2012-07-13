@@ -78,7 +78,7 @@ var WebUser = require('./models/webuser.js');
 var webUser = new WebUser();
 
 /* setup the controllers */
-var CategoryController = require('./controllers/categorycontroller.js');
+var CategoryController = require('./controllers/categoryController.js');
 var Category = require('./models/category.js');
 var category = new Category(
     azure.createTableService(accountName, accountKey)
@@ -90,7 +90,7 @@ var categoryController = new CategoryController(category); // Azure Table Storag
 //var categoryController = new CategoryController(categoryMongoDB); // MongoDB Storage
 
 
-var HomeController = require('./controllers/homecontroller.js');
+var HomeController = require('./controllers/homeController.js');
 var homeController = new HomeController();
 
 /* start the web server */

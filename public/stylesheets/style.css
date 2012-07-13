@@ -11,6 +11,10 @@ body {
     margin-top: 5px;
 }
 
+.margin-top-medium {
+    margin-top: 10px;
+}
+
 #messages {
     margin-top: 10px;
 }
